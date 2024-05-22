@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+
+    margin:0;
+    padding:0;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar{
+    position:sticky;
+    padding:10px 40px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    background-color: rgb(195, 195, 195);
+    top:0;
+    left:0;
+    z-index:100;
+    
+}
+.navbar .navbar-brand{
+    font-size: 30px;
+    color:aqua;
+    font-weight: 500;
+}
+#navbarSupportedContent a{
+    color:rgb(184, 91, 108);
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid rgb(72, 41, 47);;
+}
+#navbarSupportedContent button{
+    border-radius: 15px;
+}
+section{
+    width:100%;
+    min-height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+#home{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url(bg1.jpeg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+#home h1{
+    font-size: 80px;
+    color:rgb(157, 150, 142);
+    font-family:  "Permanent Marker", cursive;
+}
+#home p{
+    font-size: 20px;
+    color:rgb(157, 150, 142);
+}
+ #about{
+    background:linear-gradient(pink,rgb(201, 201, 124));
+    display: flex;
+    align-items: center;
+ }
+ #about img{
+    border-radius: 50%;
+    margin-top: 80px;
+    
+ }
+ 
+ #about h1{
+    font-weight: 600;
+    margin-bottom: 60px;
+    color:rgb(46, 99, 99);
+
+ }
+ #about video{
+    border-radius: 15px;
+    width:100%;
+    margin-bottom: 69px;;
+ }
+ #products{
+    background-color: rgb(150, 171, 119);
+ }
+ #products img{
+    height:200px;
+    width:200px;
+    border-radius: 20px;
+ }
+ .card{
+    height:280px;
+    width:210px;
+    border-radius: 20px !important;
+    box-shadow: 10px 10px 12px rgb(163, 214, 88);
+    background-color: rgb(150, 171, 119) ;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin:20px 50px;
+    transition: .4s;
+ }
+ .card:hover{
+    box-shadow:inset 10px 10px 12px rgb(163, 214, 88),
+                inset -10px -10px 12px rgb(163, 214, 88);
+    background-color: greenyellow;
+    transition: .4s;
+ }
+ #contact{
+    background:transparent url(contact3.jpeg);
+    background-position: center;
+    background-size: cover;
+ }
+ #contact h1{
+    font-size: 80px;
+    font-family: "Permanent Marker", cursive;
+    color:rgb(207, 201, 194)
+} 
+form{
+    display:flex ;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#contact input{
+    margin:10px 30px;
+    width:80%;
+    background-color: rgb(52, 215, 153);
+}
+#contact textarea{
+    margin:10px 30px;
+    height:250px;
+    width:80%;
+    background-color: rgb(20, 220, 246);
+}
+#contact button{
+    width:80%;
+    
+}
